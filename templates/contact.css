@@ -1,0 +1,51 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li {
+  border-right: 1px solid #bbb;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #DC143C;
+  /*color: black;*/
+}
+
+li:last-child{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 12px 15px;
+  text-decoration: none;
+  text-shadow:5px 5px 0.5px #DC143C;
+  /*font-weight: 500;*/
+  /*font-size: 30px;*/
+  font-family:URW Chancery L, cursive;
+}
+
+ul{
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}

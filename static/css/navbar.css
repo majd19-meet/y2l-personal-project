@@ -1,0 +1,86 @@
+body {
+ background-image: url("/static/images/b.jpg");
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: 95%;
+ background-attachment: fixed;
+ font-family: "Courier New", Courier, monospace;
+}
+
+h3{
+	text-align: center;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 300;
+    font-size: 30px;
+    margin-top: 4%;
+    margin-left: 66.5%;
+    margin-right: 5%;
+}
+
+h1{
+	text-align: center;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 60px;
+    font-weight: 450;
+    margin-top: 8%;
+    margin-left: 66%;
+    margin-right: 5%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li {
+  border-right: 1px solid #bbb;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/*.logo {
+    display: inline-block;
+    vertical-align: top;
+    width: 50px;
+    height: 50px;
+    margin-left: 92%;
+}
+*/
+li a:hover {
+  background-color: #111;
+}
+
+/* .active {
+  background-color: #4CAF50;
+}*/
+
+li:last-child{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-shadow:5px 5px 0.5px #DC143C;
+  /*font-weight: 500;*/
+  /*font-size: 30px;*/
+  font-family:URW Chancery L, cursive;
+}
+
+ul{
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
