@@ -28,21 +28,30 @@ h1{
     margin-right: 5%;
 }
 
-ul {
+/*ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #333;
+}*/
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0px;
+  width: 100%;
 }
 
 li {
   float: left;
-}
-
-li {
   border-right: 1px solid #bbb;
 }
+
 
 li a {
   display: block;
@@ -74,8 +83,5 @@ li:last-child{
   font-family:URW Chancery L, cursive;
 }
 
-ul{
-  position: fixed;
-  top: 0px;
-  width: 100%;
-}
+
+
