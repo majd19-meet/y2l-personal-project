@@ -1,5 +1,11 @@
 body{
   font-family: "Courier New", Courier, monospace;
+  background-image: url("/static/images/pupu.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  background-attachment: fixed;
+  text-align: center;
 }
 
 ul {
@@ -30,11 +36,6 @@ li a {
 li a:hover {
   background-color: #DC143C;
 }
-/*
-.active {
-  background-color: #DC143C;*/
-  /*color: black;*/
-}
 
 li:last-child{
   display: block;
@@ -52,4 +53,34 @@ ul{
   position: fixed;
   top: 0px;
   width: 100%;
+}
+
+h1{
+  text-decoration: underline;
+  margin-top: 8%;
+  text-align: left;
+  margin-left: 2%;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 300;
+  font-size: 55px;
+}
+
+h3{
+  text-align: left;
+  margin-left: 5%;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 300;
+  font-size: 30px;
+}
+
+h2{
+  border-style: solid;
+  border-width: 2px;
+  text-align: left;
+  margin-left: 5%;
+  margin-right: 20%;
+  background-color: rgba(170, 170, 170, 0.5);
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 300;
+  font-size: 20px;
 }
