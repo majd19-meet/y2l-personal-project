@@ -3,6 +3,7 @@ from databases import add_user, get_all_users,query_by_username
 
 app = Flask(__name__)
 
+app.config["SECRET_KEY"] = "your-secret-key"
 
 # @app.route("/")
 # def home_page():
@@ -44,6 +45,8 @@ def signup_route():
 
     if g!=None:
       print ('we already have a user with that name')
+    else:
+      add_user(name, password)
     return redirect(url_for('home'))
 
 @app.route('/login', methods=['GET', 'POST'])
@@ -57,19 +60,24 @@ def login_route():
     if user==None:
       return redirect (url_for('signup_route'))
     else:
-      if request.form['password']==user.password:
-        session['logged_in'] = True 
-        session['user_id']=user.id 
-        session['display_login'] = True
-        return redirect(url_for('home'))
+      # if request.form.get('password') and
+      if request.form['password']== user.password:
+        session["logged_in"] = True
+        session["user_id"] = user.name
+        session["display_login"] = True
 
-      return render_template('login.html')
+      # session['logged_in'] == True
+      # session['user_id']== user_id
+      # session['display_login'] == True
+        # return redirect(url_for('home'))
+
+        return render_template('home.html')
   else:
     return render_template('login.html') 
 
-@app.route('/signup')
-def signup():
-    return render_template("signup.html")
+# @app.route('/signup')
+# def signup():
+#     return render_template("signup.html")
 
 
 @app.route('/logout')

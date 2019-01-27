@@ -6,8 +6,8 @@ from sqlalchemy import create_engine
 Base = declarative_base()
 
 
-def __repr__(self):
-    return ("article title: {}, article content:{}".format(self.title, self.content))
+# def __repr__(self):
+#     return ("article title: {}, article content:{}".format(self.title, self.content))
 
 
 
@@ -15,9 +15,7 @@ def __repr__(self):
 class User(Base):
   __tablename__="user"
   id=Column(Integer, primary_key=True)
-  nationality=Column(String)
   name=Column(String, unique=True )
-  email=Column(String)
   password=Column(String)
  
   

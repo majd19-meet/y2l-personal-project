@@ -1,13 +1,19 @@
 body{
   font-family: "Courier New", Courier, monospace;
+  background-image: url("/static/images/pink.jpg");
+  background-repeat: no-repeat;
+  background-size: 120%;
+  background-attachment: fixed;
 }
 
-ul {
+.nav_bar {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
   overflow: hidden;
   background-color: #333;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  max-height: 7.5%;
 }
 
 li {
@@ -31,11 +37,6 @@ li a:hover {
   background-color: #DC143C;
 }
 
-/*.active {
-  background-color: #DC143C;*/
-  /*color: black;*/
-}
-
 li:last-child{
   display: block;
   color: white;
@@ -43,13 +44,46 @@ li:last-child{
   padding: 12px 15px;
   text-decoration: none;
   text-shadow:5px 5px 0.5px #DC143C;
-  /*font-weight: 500;*/
-  /*font-size: 30px;*/
   font-family:URW Chancery L, cursive;
 }
 
-ul{
-  position: fixed;
-  top: 0px;
-  width: 100%;
+
+.dropbtn {
+  font-size: 16px;
+  border: none;
+  margin-left: 5%;
+  visibility: visible !important;
+  display: block;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #DC143C;}
+
+.show {display: block;}
+
+h1{
+  margin-top: 6%;
+}
+
+.toptop{
+  margin-left: 5%;
 }
