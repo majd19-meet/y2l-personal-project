@@ -30,6 +30,10 @@ def topics():
 def contact():
     return render_template("contact.html")
 
+@app.route('/abortion')
+def abortion():
+    return render_template("abortion.html")
+
 
 @app.route('/signup', methods=['GET', 'POST'])
 def signup_route():

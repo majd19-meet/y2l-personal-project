@@ -1,10 +1,12 @@
 body{
   font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
-  background-image: url("/static/images/hehe.jpg");
+  background-image: url("/static/images/ks.jpg");
+  background-color: black;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 50%;
   background-position: center;
   background-attachment: fixed;
+  color: white;
 }
 
 .nav_bar {
@@ -15,18 +17,17 @@ body{
   position: fixed;
   top: 0px;
   width: 100%;
-  max-height: 7.5%;
+  max-height: 7.3%;
 }
 
 
 
 li {
   float: left;
+  border-right: 1px solid #bbb;
+
 }
 
-li {
-  border-right: 1px solid #bbb;
-}
 
 li a {
   display: block;
@@ -41,7 +42,7 @@ li a:hover {
   background-color: #DC143C;
 }
 
-li:last-child{
+.nav_bar li:last-child{
   display: block;
   color: white;
   text-align: center;
@@ -52,11 +53,13 @@ li:last-child{
 }
 
 a{
-  color: black;
+  color: white;
   /*font-weight: 400;*/
 }
 
-
+.toptop li{
+  font-weight: 1000;
+}
 
 .dropbtn {
   font-size: 16px;
@@ -66,29 +69,6 @@ a{
   display: block;
 }
 
-.dropdown {
-  position: relative;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  overflow: auto;
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown a:hover {
-  background-color: #DC143C;
-}
 
 .show {display: block;}
 
@@ -96,16 +76,18 @@ h1{
   margin-top: 6%;
   margin-left: 1%;
   text-decoration: underline;
+  color: white;
 }
 
 h4{
   font-size: 22px;
+  color: white;
 }
 
 .toptop{
   margin-left: 5%;
   font-size:20px;
-  color: black;
+  color: white;
 }
 
 .toptop a:hover{
@@ -117,46 +99,55 @@ h4{
 .abor{
   margin-left: 4%;
   text-decoration: none;
+  color: white;
 }
 
 .rel{
   margin-left: 4%;
   text-decoration: none;
+  color: white;
 }
 
 
 .rac{
   margin-left: 4%;
   text-decoration: none;
+  color: white;
 }
 
 .fem{
   margin-left: 4%;
   text-decoration: none;
+  color: white;
 }
 
 .homo{
   margin-left: 4%;
   text-decoration: none;
+  color: white;
 }
 
 .rape{
   margin-left: 4%;
   text-decoration: none;
+  color: white;
 }
 
 .dea{
   margin-left: 4%;
   text-decoration: none;
+  color: white;
 }
 
 .pal-isr{
   margin-left: 4%;
   text-decoration: none;
+  color: white;
 }
 
 a:link
 {
     text-decoration: none;
+    color: white;
 }
 
