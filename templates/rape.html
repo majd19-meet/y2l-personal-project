@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Abortion - Topics</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/toptop.css">
+    <div class=nav_bar>
+	    	<li><a class="active" href="home">Home</a></li>
+			<li><a href="topics">Topics</a></li>
+			<li><a href="contact">Contact Us</a></li>
+			<li><a href="login">Log In</a></li>
+            <li ><a href="logout">Log Out</a></li>
+    		<li><a href="signup">Sign Up</a></li>
+			<li style="float:right">Let's Discuss</li>
+		 <br><br><br><br><br><br>
+</div>
+
+</head>
+
+<style>
+body{
+	background-image: url("/static/images/i.jpg")
+}
+
+</style>
+
+<body>
+	<div class="title">
+	<br><br><br><h7>Are the victims always innocent?</h7><br><br><br>
+	<div class="u">
+	<h9>“If people were born gay, then both two of a set of identical twins would be gay. This is not the case. Gay people say "I was born gay" as an excuse for them being gay. They also say that since some animals in the wild practice gay acts, it is natural. This is also not true. Animals know that they are supposed to procreate. Do gay people really want to lower themselves to a confused animal with no thinking capacity?” <br> -Unknown</h9></div>
+<br><br>
+
+	<div class="u">
+	<h9>“Yes, people can be born gay. I think a lot of new research has suggested that sexual orientation can be influenced by hormones the fetus is exposed to during pregnancy. Sexual attraction is something innate and something you cannot change, even if you wanted to. It's determined early in our development.” <br> -Unknown</h9></div>
+<br><br>
+
+<form method="POST" action="/rape">
+<p>
+<label>Comments
+<input type="text" name="comments" maxlength="5000">
+</label>
+<input type="submit" value="Submit">
+</p>
+</form>
+
+
+{% for article in articles %}
+<p>
+	Name: {{article.user_id}}<br>
+	Comment:{{article.content}}
+</p>
+{% endfor %}
+
+
+</div>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>God - Topics</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/toptop.css">
+    <div class=nav_bar>
+	    	<li><a class="active" href="home">Home</a></li>
+			<li><a href="topics">Topics</a></li>
+			<li><a href="contact">Contact Us</a></li>
+			<li><a href="login">Log In</a></li>
+            <li ><a href="logout">Log Out</a></li>
+    		<li><a href="signup">Sign Up</a></li>
+			<li style="float:right">Let's Discuss</li>
+		 <br><br><br><br><br><br>
+</div>
+
+</head>
+
+<style>
+body{
+	background-image: url("/static/images/g.jpg")
+}
+
+</style>
+
+<body>
+	<div class="title">
+	<br><br><br><h7>Did God create evil?</h7><br><br><br>
+
+	<div class="nicholas">
+	<h9>"We are still supposed to love God above all else. But without free will man cannot love.Thus God allows free will, and with free will comes the possibility of evil. We tend to focus on all the times we get it wrong, but sometimes we get it right. And yes; for those times when we get it right, it is worth it.” <br> -Nicholas Mangieri</h9></div>
+<br><br>
+
+	<div class="u">
+	<h9>“I cannot agree that God did not create evil. Even if he created the potential for evil remember God is all knowing so by extension yes he did create evil. How can we believe that something - anything can be created outside of God without believing there are two opposing creators? Only God can create anything - and that includes evil. Now the real question is WHY, not whether he did or not.” <br> - Unknown</h9></div>
+<br><br>
+
+<form method="POST" action="/G2">
+<p>
+<label>Comments
+<input type="text" name="comments" maxlength="5000">
+</label>
+<input type="submit" value="Submit">
+</p>
+</form>
+
+
+{% for article in articles %}
+<p>
+	Name: {{article.user_id}}<br>
+	Comment:{{article.content}}
+</p>
+{% endfor %}
+
+</div>
+
+</html>

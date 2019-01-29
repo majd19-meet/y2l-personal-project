@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Abortion - Topics</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/toptop.css">
+    <div class=nav_bar>
+	    	<li><a class="active" href="home">Home</a></li>
+			<li><a href="topics">Topics</a></li>
+			<li><a href="contact">Contact Us</a></li>
+			<li><a href="login">Log In</a></li>
+            <li ><a href="logout">Log Out</a></li>
+    		<li><a href="signup">Sign Up</a></li>
+			<li style="float:right">Let's Discuss</li>
+		 <br><br><br><br><br><br>
+</div>
+
+</head>
+
+<style>
+body{
+	background-image: url("/static/images/e.jpg")
+}
+
+</style>
+
+<body>
+	<div class="title">
+	<br><br><br><h7>Is Homosexuality a Mental Illness?</h7><br><br><br>
+
+	<div class="u">
+	<h9>“Of course it is. You have a mind that doesn't match your body. So either you've got a physical biological disorder and your body is wrong, or you have a mental disorder. I think it's pretty obvious that homosexuality is a mental disorder. More to the point - does it really matter that it's a mental disorder? I think the answer to that is no, except for the fact that the world is treating the issue entirely the wrong way because of the delusion created by the gay activists.” <br> -Unknown</h9></div>
+<br><br>
+
+	<div class="u">
+	<h9>“It's a Sin, not a "Mental Disorder". The practice of homosexuality is a vile, foul, shameful, repulsive act that not only goes against human nature, but against God sacred doctrine.However, after taking their sexual practices out of the picture, homosexuals are just normal people like you and me; therefore, calling it a "mental disorder" is very extreme.” <br> -Unknown</h9></div>
+<br><br>
+
+	<div class="u">
+	<h9>“Homosexuality isn't a mental disorder, or a choice, or a problem, or a sin, or anything like that. Saying it is, is like saying that being left-handed is a mental disorder, or a choice, or a problem, or a sin.” <br> -Unknown </h9></div>
+<br><br>
+
+<form method="POST" action="/homo2">
+<p>
+<label>Comments
+<input type="text" name="comments" maxlength="5000">
+</label>
+<input type="submit" value="Submit">
+</p>
+</form>
+
+
+{% for article in articles %}
+<p>
+	Name: {{article.user_id}}<br>
+	Comment:{{article.content}}
+</p>
+{% endfor %}
+
+
+</div>
+
+</html>

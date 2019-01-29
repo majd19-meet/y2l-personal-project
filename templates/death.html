@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Abortion - Topics</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/toptop.css">
+    <div class=nav_bar>
+	    	<li><a class="active" href="home">Home</a></li>
+			<li><a href="topics">Topics</a></li>
+			<li><a href="contact">Contact Us</a></li>
+			<li><a href="login">Log In</a></li>
+            <li ><a href="logout">Log Out</a></li>
+    		<li><a href="signup">Sign Up</a></li>
+			<li style="float:right">Let's Discuss</li>
+		 <br><br><br><br><br><br>
+</div>
+
+</head>
+
+<style>
+body{
+	background-image: url("/static/images/m.jpg")
+}
+
+</style>
+
+<body>
+	<div class="title">
+	<br><br><br><h7>Should the death penalty be illegal?</h7><br><br><br>
+
+	<div class="u">
+	<h9>“The death penalty should banned. It has sentenced innocent people to death but later found innocent. There's a chance that they can convict the wrong person. We damage our international reputation by using the death penalty.” <br> -Unknown</h9></div>
+<br><br>
+
+	<div class="u">
+	<h9>“We are terrible people sometimes and do horrible things out of revenge and hate. If some killers were still alive the murder rate would sky rocket. There is always a chance someones innocent but that rarely happens. People who are using the fact that are using justice system isn't always right, well it's right most of time.” <br> -Unknown</h9></div>
+<br><br>
+
+<form method="POST" action="/death">
+<p>
+<label>Comments
+<input type="text" name="comments" maxlength="5000">
+</label>
+<input type="submit" value="Submit">
+</p>
+</form>
+
+
+{% for article in articles %}
+<p>
+	Name: {{article.user_id}}<br>
+	Comment:{{article.content}}
+</p>
+{% endfor %}
+
+
+</div>
+
+</html>

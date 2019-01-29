@@ -9,6 +9,14 @@ body{
   color: white;
 }
 
+p{
+  font-size: 11px;
+}
+
+.love{
+  text-align: center;
+}
+
 .nav_bar {
   font-family: "Courier New", Courier, monospace;
   list-style-type: none;
@@ -20,7 +28,13 @@ body{
   max-height: 7.3%;
 }
 
-
+h2{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-left: 7%;
+}
 
 li {
   float: left;
@@ -61,20 +75,12 @@ a{
   font-weight: 1000;
 }
 
-.dropbtn {
-  font-size: 16px;
-  border: none;
-  margin-left: 5%;
-  visibility: visible !important;
-  display: block;
-}
-
-
 .show {display: block;}
 
 h1{
+  /*margin-left: 3%;*/
   margin-top: 6%;
-  margin-left: 1%;
+  margin-left: 4%;
   text-decoration: underline;
   color: white;
 }
@@ -85,9 +91,14 @@ h4{
 }
 
 .toptop{
-  margin-left: 5%;
+  margin-left: 15%;
+  margin-right: 15%;
   font-size:20px;
   color: white;
+  border-style: solid;
+  /*border-width: 50%;*/
+  background-color: rgba(130, 130, 130, 0.5);
+  /*border-color: white;*/
 }
 
 .toptop a:hover{
@@ -97,56 +108,45 @@ h4{
 }
 
 .abor{
-  margin-left: 4%;
+  margin-left: 12%;
   text-decoration: none;
   color: white;
 }
 
 .rel{
-  margin-left: 4%;
+  margin-left: 12%;
   text-decoration: none;
   color: white;
 }
 
 
 .rac{
-  margin-left: 4%;
+  margin-left: 12%;
   text-decoration: none;
   color: white;
 }
 
-.fem{
-  margin-left: 4%;
-  text-decoration: none;
-  color: white;
-}
 
 .homo{
-  margin-left: 4%;
+  margin-left: 12%;
   text-decoration: none;
   color: white;
 }
 
 .rape{
-  margin-left: 4%;
+  margin-left: 12%;
   text-decoration: none;
   color: white;
 }
 
 .dea{
-  margin-left: 4%;
+  margin-left: 12%;
   text-decoration: none;
   color: white;
 }
 
-.pal-isr{
-  margin-left: 4%;
-  text-decoration: none;
-  color: white;
-}
 
-a:link
-{
+a:link{
     text-decoration: none;
     color: white;
 }

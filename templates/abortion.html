@@ -11,12 +11,59 @@
             <li ><a href="logout">Log Out</a></li>
     		<li><a href="signup">Sign Up</a></li>
 			<li style="float:right">Let's Discuss</li>
-		 <br><br><br>
+		 <br><br><br><br><br><br>
 </div>
+
 </head>
 
+<style>
+body{
+	background-image: url("/static/images/c.jpg")
+}
+</style>
+
 <body>
-	<h1>Is abortion murder?Should abortion be legal?</h1><br>
-	
+	<div class="title">
+	<br><br><br><h7>Is abortion murder? Should abortion be legal?</h7><br><br><br>
+	<div class="mark">
+	<h9>"There was no mistake in us making abortion legal and available on demand. That was what we call progress. Just like it was no mistake that we abolished institutional racism in this country around the same time. The easy thing to do is lay low, but then are we who we say we are? Do we actually stand for anything, if what we do stand for is under attack and we say nothing? There is nothing to be ashamed of here except to allow a radical and recessive group of people to bully and intimidate our mothers and sisters and daughters for exercising their right of choice." <br> - Mark Ruffalo</h9></div>
+<br><br>
+
+	<div class="kourtney">
+	<h9>"I definitely thought about it long and hard, about if I wanted to keep the baby or not, and I wasn't thinking about adoption. I do think every woman should have the right to do what they want, but I don't think it's talked through enough. I can't even tell you how many people just say, 'Oh, get an abortion.' Like it's not a big deal. <br> - Kourtney Kardashian</h9></div>
+<br><br>
+
+	<div class="justin">
+	<h9>"I really don't believe in abortion. It's like killing a baby?" <br> - Justin Bieber</h9></div>
+<br><br>
+
+	<div class="whoopi">
+	<h9>"Most women do not have [abortions] with some sort of party going on. It is the hardest decision that a woman ever has to make . . . One of the reasons we've had to make this decision is because so many women were found bleeding, dead, with hangers in their bodies because they were doing it themselves. The idea of this was to make it safe and clean — that was the reason the law came into effect." <br> - Whoopi Goldberg</h9></div>
+<br><br>
+
+
+
+<!-- 	<form action="/html/tags/html_form_tag_action.cfm" method="post">
+	<textarea rows="4" cols="50" name="comment" form="usrform">
+	Add opinion here...</textarea><br><br><br><br><br><br> -->
+
+<form method="POST" action="/abortion">
+<p>
+<label>Comments
+<input type="text" name="comments" maxlength="5000">
+</label>
+<input type="submit" value="Submit">
+</p>
+</form>
+
+
+{% for article in articles %}
+<p>
+	Name: {{article.user_id}}<br>
+	Comment:{{article.content}}
+</p>
+{% endfor %}
+
+</div>	
 
 </html>

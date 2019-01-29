@@ -19,41 +19,60 @@
 </head>
 
 <body>
-        <h1>Topics to discuss</h1><br>
+<!--         <h1>Topics to discuss</h1><br> -->
 <div class="toptop">
-    <li>Abortion</li><br>
+    <h1>Topics to discuss</h1><br>
+    <h2>Abortion</h2>
     <div class="abor">
         <a href="abortion">Is abortion murder?Should abortion be legal?</a><br>
     </div><br><br>
 
-    <li>God</li><br>
+    <h2>God</h2>
     <div class="rel">
-        <a href="#">Does God exist?</a><br>
-        <a href="#">Did God create evil?</a><br>
+        <a href="G1">Does God exist?</a><br>
+        <a href="G2">Did God create evil?</a><br>
     </div><br><br>
 
 
-    <li>Racism</li><br>
+    <h2>Racism</h2>
     <div class="rac">
-        <a href="#">What is Racism?</a><br>
+        <a href="racism">What is Racism?</a><br>
     </div><br><br>
 
 
-    <li>Homosexuality</li><br>
+    <h2>Homosexuality</h2>
     <div class="homo">
-        <a href="#">Are people born homosexual?</a><br>
-        <a href="#">Is Homosexuality a Mental Illness ?</a><br>
+        <a href="homo1">Are people born homosexual?</a><br>
+        <a href="homo2">Is Homosexuality a Mental Illness ?</a><br>
     </div><br><br>
 
-    <li>Rape</li><br>
+    <h2>Rape</h2>
     <div class="rape">
-        <a href="#">Are the victims always innocent?</a><br>
+        <a href="rape">Are the victims always innocent?</a><br>
     </div><br><br>
 
-    <li>Death Penalty</li><br>
+    <h2>Death Penalty</h2>
     <div class="dea">
-        <a href="#">Should the death penalty be illegal?</a><br>
+        <a href="death">Should the death penalty be illegal?</a><br>
     </div><br><br>
+
+<div class="love">
+<form method="post" name="myemailform" action="{{url_for('send_email')}}">
+
+<!--     <p>
+        <label for='name'>Enter Name:</label><br>
+        <input type="text" name="name">
+    </p> -->
+    <p>
+        <label for='suggestion'>Enter Suggestion:</label><br>
+        <input type="text" name="suggestion">
+    </p>
+    <p>
+        <input type="submit" value="Submit">
+    </p>
+    <p>*This suggestion will be sent to our E-mail account. We will try to display your Suggestion/s to our Website.You will be returned to the home page*</p>
+</form>
+</div>
 
     </body>
 
